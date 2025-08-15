@@ -8,7 +8,7 @@ namespace Ejercicio1.Models
 {
     internal class Servicio
     {
-        List<Persona> personas = new List<Persona>();
+        public List<Persona> personas = new List<Persona>();
 
         public bool AgregarPersona(Persona persona)
         {
@@ -35,6 +35,11 @@ namespace Ejercicio1.Models
         public Persona VerPersonaPorDNI(int dni)
         {
             return personas.Find(p=> p.DNI == dni);
+        }
+
+        public void EliminarPersona(Persona unaPersona)
+        {
+            personas.Remove(unaPersona);
         }
     }
 }
