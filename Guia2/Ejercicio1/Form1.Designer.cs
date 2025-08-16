@@ -119,7 +119,7 @@
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.lboxResultado);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Ejercicio 1";
             this.ResumeLayout(false);
 
         }
